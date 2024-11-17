@@ -69,6 +69,36 @@
     
     
   </li>
+
+  <li>
+    Configure Environment Variables:
+    <p> create a .env file in backend directory and add database credentials</p>
+    <code>
+      PORT = 3000
+DB_HOST = localhost
+DB_USER = postgres
+DB_PASSWORD = yourPassword
+DB_NAME = yourDatabaseName
+DB_PORT = 5432
+    </code>
+  </li>
+
+  <li>
+    Run the backend server
+    <code>
+      cd backend
+      npm start
+    </code>
+  </li>
+
+  <li>
+    Run  Frontend Application
+    <code>
+      cd frontend/Contact_UI
+      npm run dev
+    </code>
+    
+  </li>
   
   
   
