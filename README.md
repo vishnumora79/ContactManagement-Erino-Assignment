@@ -34,6 +34,42 @@
     <p>git clone https://github.com/vishnumora79/ContactManagement-Erino-Assignment.git</p>
     <p>cd ContactManagement-Erino-Assignment</p>
   </li>
+
+  <li> Install dependencies
+   <ul>
+     <li>
+       Navigate to the backend folder and install dependencies:
+       <p>cd backend</p>
+       <p>npm install</p>
+     </li>
+     <li>
+       Navigate to the frontend folder and install dependencies:
+       <p>cd frontend/Contact_UI</p>
+       <p>npm install</p>
+     </li>
+   </ul>
+    
+  </li>
+
+  <li>
+    Set up database
+    <p>crete a databse in PostgreSQL (make sure you installed PostgreSQL in your system</p>
+    <p>Table Schema Script:</p>
+    <code>
+      CREATE TABLE contacts (
+    id SERIAL PRIMARY KEY,
+    firstName VARCHAR(50) NOT NULL,
+    lastName VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    phoneNumber VARCHAR(15),
+    company VARCHAR(100),
+    jobTitle VARCHAR(50)
+);
+    </code>
+    
+    
+  </li>
+  
   
   
 </ol>
