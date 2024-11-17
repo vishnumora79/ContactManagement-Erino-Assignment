@@ -30,7 +30,11 @@
 
 <h3>Setup Instructions</h3>
 <ol>
-  <li>Clone the repository</li>
+  <li>Clone the repository
+    <p>git clone https://github.com/vishnumora79/ContactManagement-Erino-Assignment.git</p>
+    <p>cd ContactManagement-Erino-Assignment</p>
+  </li>
+  
   
 </ol>
 
