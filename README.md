@@ -29,4 +29,8 @@
   
 
 <h3>Setup Instructions</h3>
+<ol>
+  <li>Clone the repository</li>
+  
+</ol>
 
