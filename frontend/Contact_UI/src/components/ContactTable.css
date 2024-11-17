@@ -1,0 +1,64 @@
+/* Table container styling */
+.table-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 90%;
+    overflow-x: auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+.contact-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+}
+
+.contact-table th, 
+.contact-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.contact-table thead th {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.contact-table tbody tr:hover {
+    background-color: #e9f5ff;
+}
+
+/* Buttons styling */
+.btn {
+    padding: 8px 12px;
+    margin: 0 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
