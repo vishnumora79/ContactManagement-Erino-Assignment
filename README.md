@@ -31,21 +31,27 @@
 <h3>Setup Instructions</h3>
 <ol>
   <li>Clone the repository
-    <p>git clone https://github.com/vishnumora79/ContactManagement-Erino-Assignment.git</p>
-    <p>cd ContactManagement-Erino-Assignment</p>
+    <code>
+      git clone https://github.com/vishnumora79/ContactManagement-Erino-Assignment.git
+    cd ContactManagement-Erino-Assignment
+    </code>
   </li>
 
   <li> Install dependencies
    <ul>
      <li>
        Navigate to the backend folder and install dependencies:
-       <p>cd backend</p>
-       <p>npm install</p>
+       <code>
+         cd backend
+         npm install
+       </code>
      </li>
      <li>
        Navigate to the frontend folder and install dependencies:
-       <p>cd frontend/Contact_UI</p>
-       <p>npm install</p>
+       <code>
+         cd frontend/Contact_UI
+         npm install
+       </code>
      </li>
    </ul>
     
@@ -97,10 +103,40 @@ DB_PORT = 5432
       cd frontend/Contact_UI
       npm run dev
     </code>
-    
   </li>
-  
-  
-  
+</ol>
+
+<h2>How the Application Works</h2>
+<h3>Frontend</h3>
+<ul>
+  <li>Built with React.js vite bundler </li>
+  <li>ContactForm Component: Collects user input to add new contacts.</li>
+  <li>ContactTable Component: Displays a list of contacts and provides delete functionality</li>
+  <li>State Management: Shared state is handled using a parent component for synchronization between form and table.</li>
+</ul>
+
+<h3>Backend</h3>
+<ul>
+  <li>Developed with Node.js and Express.js.</li>
+  <li>
+    <ul>
+      <li> POST /api/contacts: Adds a new contact to the database. </li>
+      <li> GET /api/contacts: Fetches all contacts from the database.</li>
+      <li> PUT /api/contacts/:id: Updates a contact based on its ID.</li>
+      <li> DELETE /api/contacts/:id: Deletes a contact based on its ID.</li>
+    </ul>
+  </li>
+  <li>Database: Data is stored in a PostgreSQL database using a normalized schema.</li>
+</ul>
+
+
+<h2>Major Technical Decisions</h2>
+<ol>
+  <li>Frontend Framework: Chose React.js for its component-based architecture and efficient state management.</li>
+  <li>Backend: Used Express.js for creating lightweight and scalable APIs.</li>
+  <li>Database: PostgreSQL was selected for its reliability and strong relational data support.
+</li>
+  <li>State Management: Implemented state sharing through a parent component instead of using an external state library like Redux, as the app's scope is small.</li>
+  <li>Styling: Basic CSS for responsiveness and clarity in the user interface.</li>
 </ol>
 
